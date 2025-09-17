@@ -1,0 +1,34 @@
+# Core ML and vision
+torch
+torchvision
+torchaudio
+
+# Models and utils
+timm
+albumentations
+opencv-python-headless
+pillow
+pandas
+scikit-learn
+numpy
+matplotlib
+
+# Explainability
+# PyPI wheels for pytorch-grad-cam are occasionally unavailable for some Python versions.
+# Install directly from GitHub to ensure compatibility in Docker.
+git+https://github.com/jacobgil/pytorch-grad-cam.git
+
+# API and serving
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic>=2
+
+# UI
+streamlit
+
+# Optional extras
+PyYAML
+
+# Hugging Face Hub for model download
+huggingface_hub

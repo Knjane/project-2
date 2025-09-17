@@ -1,0 +1,19 @@
+app = "emotion-api" # Change this to your Fly.io app name if needed
+
+[env]
+FACE_DETECT = "1"
+EMOTION_CONF_THRESH = "0.45"
+CORS_ORIGINS = "*"
+HF_REPO_ID = "Knjane/emotion-best-pt" 
+
+[[services]]
+  internal_port = 8000
+  protocol = "tcp"
+
+  [[services.ports]]
+    handlers = ["http"]
+    port = 80
+
+  [[services.ports]]
+    handlers = ["tls", "http"]
+    port = 443
